@@ -1,0 +1,39 @@
+  // variables
+  @import "variables.scss";
+
+
+  /* menu navegacion */
+
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    justify-content: space-evenly;
+    margin: 5px;
+    padding: 10px;
+    font-size: 50%; 
+  }
+  
+  .navegacion__ul {
+    list-style-type: none; 
+  }
+  
+  .navegacion__ul li a {
+    color: $colorterciario-textos;
+    padding: 10px 20px;
+    text-decoration: none; 
+  }
+  
+  .navegacion__ul li a:hover {
+    background-color: midnightblue;
+    color: $colorprimario-textos; 
+  }
+  
+  .article, ul li {
+    list-style-type: none;
+    font-size: large;
+    padding: 5px;
+    color: $colorsecundario-textos;
+    text-align: center;
+   }

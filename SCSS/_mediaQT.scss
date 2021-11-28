@@ -1,0 +1,66 @@
+  // variables
+  @import "variables.scss";
+
+
+// media query tablet
+
+@media only screen and (max-width: 767px) and (min-width: 321px) {
+    .main__index {
+    display: grid;
+    grid-template-areas: 
+    'article-ofertas' 
+    'article-ofertas'
+    'article-nosotros' 
+    'article-nosotros' 
+    'article-metodoCompra '
+    'article-metodoCompra '
+    'aside-publicidad '
+    'aside-publicidad'
+    ;
+    grid-template-columns: 9fr;
+    grid-template-rows: 500px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: stretch;
+    align-items: stretch;
+    margin: 10px; 
+  }
+
+  .main__productos {
+    display: grid;
+    grid-template-areas: 
+    'imagenesProducto' 
+    'imagenesProducto'
+    'videoProducto' 
+    'videoProducto' 
+    'detalle-producto '
+    'detalle-producto'
+    'otros-productos '
+    'otros-productos'
+    ;
+    grid-template-columns: 11fr;
+    grid-template-rows: 700px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: stretch;
+    align-items: stretch;
+    margin: 10px; 
+  }
+
+  @mixin tamanio ($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+  }
+
+  .article__producto-ar{
+    @include tamanio(80px, 100% )
+  }
+  
+  .footer1 {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 3fr;
+    justify-items: center;
+    background: linear-gradient(rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493)); 
+  }
+}

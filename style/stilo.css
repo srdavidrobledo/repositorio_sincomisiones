@@ -1,0 +1,330 @@
+/* titulo y subtitulo */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+.body {
+  background-image: url(../media/Imagenes/img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.header__titulo {
+  color: gold;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  font-size: 50px;
+  background-image: none;
+  border-bottom: 2px solid gold;
+  margin: 0px; }
+
+.titulo:hover {
+  transition: 3s;
+  font-size: 60px; }
+
+.error {
+  background-image: url(../media/Imagenes/404.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/* secciones */
+.imagenP {
+  height: 50px; }
+
+.imagenP:hover {
+  transform: scale(2, 2); }
+
+/* menu navegacion */
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  justify-content: space-evenly;
+  margin: 5px;
+  padding: 10px;
+  font-size: 50%; }
+
+.navegacion__ul {
+  list-style-type: none; }
+
+.navegacion__ul li a {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none; }
+
+.navegacion__ul li a:hover {
+  background-color: midnightblue;
+  color: gold; }
+
+.article, ul li {
+  list-style-type: none;
+  font-size: large;
+  padding: 5px;
+  color: rgba(238, 204, 13, 0.76);
+  text-align: center; }
+
+/* area grid index */
+.main__index {
+  display: grid;
+  grid-template-areas: 'article-ofertas article-ofertas article-ofertas' 'article-nosotros article-metodoCompra aside-publicidad' 'article-nosotros article-metodoCompra  aside-publicidad';
+  grid-template-columns: 3fr 3fr 3fr;
+  grid-template-rows: 400px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-items: stretch;
+  align-items: stretch;
+  margin: 10px; }
+
+.main__article--ofertas {
+  grid-area: article-ofertas;
+  background: linear-gradient(to top, rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493));
+  margin: 6px; }
+
+.main__article--nosotros {
+  grid-area: article-nosotros;
+  background: linear-gradient(to top, rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493));
+  margin: 6px; }
+
+.titulo6, .titulo7 {
+  font-size: large;
+  color: rgba(238, 204, 13, 0.76);
+  text-align: center; }
+
+.carousel-inner {
+  margin: 20px 0 0 0; }
+
+.main__article--metodoCompra {
+  grid-area: article-metodoCompra;
+  background: linear-gradient(to top, rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493));
+  margin: 6px;
+  padding-top: 10px;
+  text-align: center; }
+
+.main__article--metodoCompra p {
+  font-size: large;
+  color: rgba(238, 204, 13, 0.76);
+  padding: 2px; }
+
+.main__aside--publicidad {
+  grid-area: aside-publicidad;
+  background: linear-gradient(to top, rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493));
+  color: rgba(238, 204, 13, 0.76);
+  font-size: large;
+  text-align: center;
+  margin: 6px;
+  padding: 10px; }
+
+/* area grid productos */
+.main__productos {
+  display: grid;
+  grid-template-areas: 'imagenesProducto videoProducto detalle-producto otros-productos' 'imagenesProducto videoProducto detalle-producto otros-productos';
+  grid-template-columns: 3fr 3fr 3fr 2fr;
+  grid-template-rows: 500px;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  justify-items: stretch;
+  align-items: stretch;
+  margin: 10px; }
+
+.article__imagenesProducto {
+  grid-area: imagenesProducto;
+  background: linear-gradient(to top, rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493));
+  margin: 6px; }
+
+.carousel-inner {
+  margin: 20px 0 0 0; }
+
+.article__videoProducto {
+  grid-area: videoProducto;
+  background: linear-gradient(to top, rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493));
+  margin: 6px;
+  padding-top: 10px;
+  text-align: center; }
+
+.article__videoProducto p {
+  font-size: large;
+  color: rgba(238, 204, 13, 0.76);
+  padding: 2px; }
+
+.article__detalleProducto {
+  grid-area: detalle-producto;
+  background: linear-gradient(to top, rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493));
+  font-size: large;
+  text-align: center;
+  margin: 6px; }
+
+.article__otrosProductos {
+  grid-area: otros-productos;
+  background: linear-gradient(to top, rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493));
+  margin: 6px; }
+
+.article__producto-ar {
+  margin: 5px;
+  padding: 5px;
+  background-image: url(../media/Imagenes/Producto/imagen4.png);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.article__producto-ar {
+  height: 32%;
+  width: 100%; }
+
+.busqueda {
+  display: flex;
+  justify-content: center; }
+
+.busqueda .producto {
+  color: gold; }
+
+/* contacto */
+.contacto {
+  text-align: center;
+  color: gold;
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  border-bottom: 2px solid gold;
+  align-self: center;
+  margin: 5px; }
+
+.coloresMenu {
+  color: gold;
+  margin: 5px;
+  padding: 30px; }
+
+.formulario__contacto {
+  padding: 2%;
+  margin: 2%; }
+
+.form-select {
+  background-color: rgba(207, 203, 203, 0.205); }
+
+.form-select {
+  color: rgba(207, 207, 207, 0.466); }
+
+.col-md-4, .col-md-6, .col-md-3, .col-12 {
+  color: gold; }
+
+.input-group-text {
+  background-color: rgba(207, 203, 203, 0.205);
+  color: rgba(207, 207, 207, 0.466); }
+
+/* mejoras */
+.elemento__titulo {
+  margin: 2px;
+  text-align: center;
+  color: gold;
+  font-family: 'Amatic SC', cursive;
+  border-bottom: 2px solid gold; }
+
+.nombreM {
+  color: gold; }
+
+.form-floating {
+  margin: 30px 0 5px 0px;
+  padding-top: 10px;
+  color: gold; }
+
+.form-control {
+  background: rgba(207, 203, 203, 0.205);
+  color: gold; }
+
+.btn-primary {
+  margin-right: 10px;
+  margin-bottom: 10px; }
+
+/* Nosotros */
+.encabezado h1 {
+  color: gold;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  border-bottom: 2px solid gold;
+  padding: 20px; }
+
+.main__seccion {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 10fr;
+  grid-template-rows: 350px; }
+
+.main__seccion p {
+  color: gold;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: large; }
+
+.border-info {
+  margin: 5px; }
+
+/* footer */
+.footer {
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  justify-items: center;
+  background: linear-gradient(rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493)); }
+
+.infoContacto {
+  color: gold; }
+
+@media only screen and (max-width: 767px) and (min-width: 321px) {
+  .main__index {
+    display: grid;
+    grid-template-areas: 'article-ofertas'  'article-ofertas' 'article-nosotros'  'article-nosotros'  'article-metodoCompra ' 'article-metodoCompra ' 'aside-publicidad ' 'aside-publicidad';
+    grid-template-columns: 9fr;
+    grid-template-rows: 500px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: stretch;
+    align-items: stretch;
+    margin: 10px; }
+  .main__productos {
+    display: grid;
+    grid-template-areas: 'imagenesProducto'  'imagenesProducto' 'videoProducto'  'videoProducto'  'detalle-producto ' 'detalle-producto' 'otros-productos ' 'otros-productos';
+    grid-template-columns: 11fr;
+    grid-template-rows: 700px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: stretch;
+    align-items: stretch;
+    margin: 10px; }
+  .article__producto-ar {
+    height: 80px;
+    width: 100%; }
+  .footer1 {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 3fr;
+    justify-items: center;
+    background: linear-gradient(rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493)); } }
+
+@media only screen and (max-width: 320px) {
+  .main__index {
+    display: grid;
+    grid-template-areas: 'article-ofertas'  'article-ofertas' 'article-nosotros'  'article-nosotros'  'article-metodoCompra ' 'article-metodoCompra ' 'aside-publicidad ' 'aside-publicidad';
+    grid-template-columns: 9fr;
+    grid-template-rows: 500px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: stretch;
+    align-items: stretch;
+    margin: 10px; }
+  .main__productos {
+    display: grid;
+    grid-template-areas: 'imagenesProducto'  'imagenesProducto' 'videoProducto'  'videoProducto'  'detalle-producto ' 'detalle-producto' 'otros-productos ' 'otros-productos';
+    grid-template-columns: 11fr;
+    grid-template-rows: 700px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: stretch;
+    align-items: stretch;
+    margin: 10px; }
+  .article__producto-ar {
+    height: 80px;
+    width: 100%; }
+  .footer1 {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 3fr;
+    justify-items: center;
+    background: linear-gradient(rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493)); } }

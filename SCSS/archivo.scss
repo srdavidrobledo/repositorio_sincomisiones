@@ -1,0 +1,165 @@
+// variables
+@import "variables.scss";
+
+/* titulo y subtitulo */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+ }
+  
+  .body {
+    background-image: url(../media/Imagenes/img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+  }
+  
+  .header__titulo {
+    color: $colorprimario-textos;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-size: 50px;
+    background-image: none;
+    border-bottom: 2px solid $colorprimario-bordes;
+    margin: 0px; 
+
+  }
+  
+  .titulo:hover {
+    transition: 3s;
+    font-size: 60px; 
+  }
+  
+ // 404 error
+ .error {
+  background-image: url(../media/Imagenes/404.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+  /* secciones */
+  .imagenP {
+    height: 50px;
+   }
+  
+  .imagenP:hover {
+    transform: scale(2, 2); 
+  }
+  
+  @import "nav.scss";
+ 
+  @import "grid.scss";
+  
+  /* contacto */
+  .contacto {
+    text-align: center;
+    color: $colorprimario-textos;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    border-bottom: 2px solid $colorprimario-bordes;
+    align-self: center;
+    margin: 5px; 
+  }
+  
+  .coloresMenu {
+    color: $colorprimario-textos;
+    margin: 5px;
+    padding: 30px;
+  }
+
+  .formulario__contacto{
+    padding: 2%;
+    margin: 2%;
+  }
+
+  .form-select{
+    background-color: $colorprimario-fondo;
+  }
+
+  .form-select{
+    color: rgba(207, 207, 207, 0.466);
+  }
+  
+  .col-md-4, .col-md-6, .col-md-3 , .col-12{
+    color: $colorprimario-textos;
+  }
+
+  .input-group-text{
+    background-color: $colorprimario-fondo;
+    color: rgba(207, 207, 207, 0.466);
+  }
+ 
+  /* mejoras */
+  .elemento__titulo {
+    margin: 2px;
+    text-align: center;
+    color: $colorprimario-textos;
+    font-family: 'Amatic SC', cursive;
+    border-bottom: 2px solid $colorprimario-bordes; 
+  }
+  
+  .nombreM {
+    color: $colorprimario-textos; 
+  }
+  
+  .form-floating {
+    margin: 30px 0 5px 0px;
+    padding-top: 10px;
+    color: $colorprimario-textos; 
+  }
+  
+  .form-control {
+    background: rgba(207, 203, 203, 0.205);
+    color: $colorprimario-textos; 
+  }
+  
+  .btn-primary {
+    margin-right: 10px;
+    margin-bottom: 10px; 
+  }
+  
+  /* Nosotros */
+  .encabezado h1 {
+    color: $colorprimario-textos;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    border-bottom: 2px solid $colorprimario-bordes;
+    padding: 20px; 
+  }
+  
+  .main__seccion {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 10fr;
+    grid-template-rows: 350px; 
+  } 
+  
+  .main__seccion p {
+    color: $colorprimario-textos;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: large; 
+  }
+  
+  .border-info {
+    margin: 5px; 
+  }
+  
+  /* footer */
+  .footer {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    justify-items: center;
+    background: linear-gradient(rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493)); 
+  }
+
+  .infoContacto {
+    color: $colorprimario-textos;
+  }
+  
+
+ @import "mediaQT.scss";
+
+ @import "mediaQC.scss";

@@ -1,0 +1,160 @@
+// variables
+@import "variables.scss";
+
+/* area grid index */
+.main__index {
+  display: grid;
+  grid-template-areas: 
+ 'article-ofertas article-ofertas article-ofertas'
+ 'article-nosotros article-metodoCompra aside-publicidad'
+ 'article-nosotros article-metodoCompra  aside-publicidad'
+ ;
+  grid-template-columns: 3fr 3fr 3fr;
+  grid-template-rows: 400px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  justify-items: stretch;
+  align-items: stretch;
+  margin: 10px; 
+}
+
+.main__article--ofertas{
+  grid-area: article-ofertas;
+  background: linear-gradient(to top, rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493));
+  margin: 6px; 
+}
+
+.main__article--nosotros{
+  grid-area: article-nosotros;
+  background: linear-gradient(to top, rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493));
+  margin: 6px; 
+}
+
+.titulo6, .titulo7{
+  font-size: large;
+  color: $colorsecundario-textos;
+  text-align: center;
+
+}
+
+.carousel-inner{
+  margin: 20px 0 0 0;
+}
+
+
+
+
+.main__article--metodoCompra{
+  grid-area: article-metodoCompra;
+  background: linear-gradient(to top, rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493));
+  margin: 6px;
+  padding-top: 10px;
+  text-align: center;
+ }
+
+.main__article--metodoCompra p {
+  font-size: large;
+  color: $colorsecundario-textos;
+  padding: 2px;
+}
+
+.main__aside--publicidad {
+  grid-area: aside-publicidad;
+  background: linear-gradient(to top, rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493));
+  color: $colorsecundario-textos;
+  font-size: large;
+  text-align: center; 
+  margin: 6px;
+  padding: 10px;
+}
+
+
+
+
+
+/* area grid productos */
+ 
+ .main__productos {
+    display: grid;
+    grid-template-areas: 
+   'imagenesProducto videoProducto detalle-producto otros-productos'
+   'imagenesProducto videoProducto detalle-producto otros-productos';
+    grid-template-columns: 3fr 3fr 3fr 2fr;
+    grid-template-rows: 500px;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    justify-items: stretch;
+    align-items: stretch;
+    margin: 10px; 
+  }
+  
+  .article__imagenesProducto{
+    grid-area: imagenesProducto;
+    background: linear-gradient(to top, rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493));
+    margin: 6px; 
+  }
+
+  .carousel-inner{
+    margin: 20px 0 0 0;
+  }
+  
+  .article__videoProducto {
+    grid-area: videoProducto;
+    background: linear-gradient(to top, rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493));
+    margin: 6px;
+    padding-top: 10px;
+    text-align: center;
+   }
+  
+  .article__videoProducto p {
+    font-size: large;
+    color: $colorsecundario-textos;
+    padding: 2px;
+    
+  }
+  
+  .article__detalleProducto{
+    grid-area: detalle-producto;
+    background: linear-gradient(to top, rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493));
+    
+    font-size: large;
+    text-align: center; 
+    margin: 6px;
+  }
+
+  .article__otrosProductos{
+    grid-area: otros-productos;
+    background: linear-gradient(to top, rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493));
+    margin: 6px;
+  }
+ 
+  @each $productos  in article__producto {
+    .#{$productos}-ar{
+      margin: 5px;
+      padding: 5px;
+      background-image: url(../media/Imagenes/Producto/imagen4.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      
+    }
+    
+  }
+  
+  @mixin tamanio ($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+  }
+
+  .article__producto-ar{
+    @include tamanio(32%, 100% )
+  }
+
+
+  .busqueda {
+    display: flex;
+    justify-content: center;
+  }
+    
+  .busqueda .producto {
+    color: $colorprimario-textos;
+  }
