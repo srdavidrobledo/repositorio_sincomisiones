@@ -74,6 +74,16 @@
 
 /* area grid productos */
  
+ .form-inline{
+   margin: 5px;
+   padding: 2px;
+ }
+
+ .busqueda__formulario--check{
+  margin: 5px;
+  padding: 2px;
+ }
+
  .main__productos {
     display: grid;
     grid-template-areas: 

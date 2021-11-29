@@ -23,9 +23,12 @@
   font-size: 60px; }
 
 .error {
-  background-image: url(../media/Imagenes/404.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-color: #4c0b7a; }
+
+.divError img {
+  height: 100%;
+  width: 100%;
+  background-position: center; }
 
 /* secciones */
 .imagenP {
@@ -116,6 +119,14 @@ header nav ul {
   padding: 10px; }
 
 /* area grid productos */
+.form-inline {
+  margin: 5px;
+  padding: 2px; }
+
+.busqueda__formulario--check {
+  margin: 5px;
+  padding: 2px; }
+
 .main__productos {
   display: grid;
   grid-template-areas: 'imagenesProducto videoProducto detalle-producto otros-productos' 'imagenesProducto videoProducto detalle-producto otros-productos';
@@ -268,11 +279,15 @@ header nav ul {
   color: gold; }
 
 @media only screen and (max-width: 767px) and (min-width: 321px) {
+  .error {
+    height: 100%; }
+  header nav ul {
+    flex-direction: column; }
   .main__index {
     display: grid;
-    grid-template-areas: 'article-ofertas'  'article-ofertas' 'article-nosotros'  'article-nosotros'  'article-metodoCompra ' 'article-metodoCompra ' 'aside-publicidad ' 'aside-publicidad';
+    grid-template-areas: 'article-ofertas'  'article-nosotros'  'article-nosotros'  'article-metodoCompra ' 'article-metodoCompra ' 'aside-publicidad ' 'aside-publicidad';
     grid-template-columns: 9fr;
-    grid-template-rows: 500px;
+    grid-template-rows: auto;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     justify-items: stretch;
@@ -282,7 +297,7 @@ header nav ul {
     display: grid;
     grid-template-areas: 'imagenesProducto'  'imagenesProducto' 'videoProducto'  'videoProducto'  'detalle-producto ' 'detalle-producto' 'otros-productos ' 'otros-productos';
     grid-template-columns: 11fr;
-    grid-template-rows: 700px;
+    grid-template-rows: auto;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     justify-items: stretch;
@@ -299,11 +314,15 @@ header nav ul {
     background: linear-gradient(rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493)); } }
 
 @media only screen and (max-width: 320px) {
+  .error {
+    height: 100%; }
+  header nav ul {
+    flex-direction: column; }
   .main__index {
     display: grid;
-    grid-template-areas: 'article-ofertas'  'article-ofertas' 'article-nosotros'  'article-nosotros'  'article-metodoCompra ' 'article-metodoCompra ' 'aside-publicidad ' 'aside-publicidad';
+    grid-template-areas: 'article-ofertas'  'article-nosotros'  'article-nosotros'  'article-metodoCompra ' 'article-metodoCompra ' 'aside-publicidad ' 'aside-publicidad';
     grid-template-columns: 9fr;
-    grid-template-rows: 500px;
+    grid-template-rows: auto;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     justify-items: stretch;
@@ -313,7 +332,7 @@ header nav ul {
     display: grid;
     grid-template-areas: 'imagenesProducto'  'imagenesProducto' 'videoProducto'  'videoProducto'  'detalle-producto ' 'detalle-producto' 'otros-productos ' 'otros-productos';
     grid-template-columns: 11fr;
-    grid-template-rows: 700px;
+    grid-template-rows: auto;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     justify-items: stretch;

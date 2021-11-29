@@ -16,6 +16,8 @@
     
   }
   
+ 
+
   .header__titulo {
     color: $colorprimario-textos;
     font-family: 'Amatic SC', cursive;
@@ -33,11 +35,18 @@
   }
   
  // 404 error
- .error {
-  background-image: url(../media/Imagenes/404.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; 
+.error{
+  background-color: rgb(76, 11, 122);
 }
+
+.divError img {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+
+}
+
+
   /* secciones */
   .imagenP {
     height: 50px;
