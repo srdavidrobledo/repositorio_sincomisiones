@@ -141,15 +141,13 @@
   @each $productos  in article__producto {
     .#{$productos}-ar{
       margin: 5px;
-      padding: 5px;
-      background-image: url(../media/Imagenes/Producto/imagen4.png);
-      background-repeat: no-repeat;
-      background-position: center;
+      padding: 2px 2px 2px 30px;
+      
       
     }
     
   }
-  
+
   @mixin tamanio ($alto, $ancho) {
     height: $alto;
     width: $ancho;
