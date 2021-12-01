@@ -172,7 +172,10 @@ header nav ul {
 
 .article__producto-ar {
   margin: 5px;
-  padding: 2px 2px 2px 30px; }
+  padding: 5px;
+  background-image: url(../media/Imagenes/Producto/imagen4.png);
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .article__producto-ar {
   height: 32%;
