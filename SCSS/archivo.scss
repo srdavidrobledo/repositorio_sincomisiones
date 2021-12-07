@@ -118,8 +118,8 @@
     color: $colorprimario-textos; 
   }
   
-  .form-control {
-    background: rgba(207, 203, 203, 0.205);
+  .form-control{
+    background: linear-gradient(rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493));
     color: $colorprimario-textos; 
   }
   
@@ -172,3 +172,23 @@
  @import "mediaQT.scss";
 
  @import "mediaQC.scss";
+
+
+//  estilos a botones
+.btn.btn-primary{
+  background: linear-gradient(to top, rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493)); 
+  color: $colorprimario-textos;
+  border: $colorprimario-bordes;
+}
+
+.btn.btn-primary.me-md-2{
+  background: linear-gradient(to top, rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493)); 
+  color: $colorprimario-textos;
+  border: $colorprimario-bordes;
+}
+
+#validationDefault04.form-select{
+  background: linear-gradient(to top, rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493)); 
+  color: $colorprimario-textos;
+}
+
