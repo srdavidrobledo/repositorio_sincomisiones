@@ -30,7 +30,7 @@
   margin: 6px; 
 }
 
-.titulo6, .titulo7{
+.titulo6, .titulo7, .main__article--nosotros--ul{
   font-size: large;
   color: $colorsecundario-textos;
   text-align: center;
@@ -126,10 +126,27 @@
   .article__detalleProducto{
     grid-area: detalle-producto;
     background: linear-gradient(to top, rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493));
-    
-    font-size: large;
-    text-align: center; 
-    margin: 6px;
+    padding: 1px;
+    margin: 2%;
+  }
+
+  .article__detalleProducto--ul{
+    text-align: center;
+    color: $colorsecundario-textos;
+    text-decoration: none;
+    list-style: none;
+    padding: 2px;
+    margin: 3%;
+  }
+
+  .article__detalleProducto--ul2{
+    text-align: center;
+    color: $colorsecundario-textos;
+    text-decoration: none;
+    list-style: none;
+    padding: 2px;
+    margin: 3%;
+
   }
 
   .article__otrosProductos{

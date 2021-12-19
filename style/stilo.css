@@ -38,33 +38,22 @@
   transform: scale(2, 2); }
 
 /* menu navegacion */
-header nav ul {
+.navegacion__ul {
+  list-style: none;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  list-style: none;
-  justify-content: space-evenly;
-  margin: 5px;
-  padding: 10px;
-  font-size: 50%; }
+  justify-content: space-around;
+  text-align: center; }
 
-.navegacion__ul {
-  list-style-type: none; }
-
-.navegacion__ul li a {
+.navegacion__ul, li a {
   color: white;
   padding: 10px 20px;
-  text-decoration: none; }
+  text-decoration: none;
+  list-style: none;
+  font-size: large; }
 
 .navegacion__ul li a:hover {
   color: gold; }
-
-.article, ul li {
-  list-style-type: none;
-  font-size: large;
-  padding: 5px;
-  color: rgba(238, 204, 13, 0.76);
-  text-align: center; }
 
 /* area grid index */
 .main__index {
@@ -88,9 +77,9 @@ header nav ul {
   background: linear-gradient(to top, rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493));
   margin: 6px; }
 
-.titulo6, .titulo7 {
+.titulo6, .titulo7, .main__article--nosotros--ul {
   font-size: large;
-  color: rgba(238, 204, 13, 0.76);
+  color: rgba(238, 204, 13, 0.897);
   text-align: center; }
 
 .carousel-inner {
@@ -105,13 +94,13 @@ header nav ul {
 
 .main__article--metodoCompra p {
   font-size: large;
-  color: rgba(238, 204, 13, 0.76);
+  color: rgba(238, 204, 13, 0.897);
   padding: 2px; }
 
 .main__aside--publicidad {
   grid-area: aside-publicidad;
   background: linear-gradient(to top, rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493));
-  color: rgba(238, 204, 13, 0.76);
+  color: rgba(238, 204, 13, 0.897);
   font-size: large;
   text-align: center;
   margin: 6px;
@@ -154,15 +143,30 @@ header nav ul {
 
 .article__videoProducto p {
   font-size: large;
-  color: rgba(238, 204, 13, 0.76);
+  color: rgba(238, 204, 13, 0.897);
   padding: 2px; }
 
 .article__detalleProducto {
   grid-area: detalle-producto;
   background: linear-gradient(to top, rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493));
-  font-size: large;
+  padding: 1px;
+  margin: 2%; }
+
+.article__detalleProducto--ul {
   text-align: center;
-  margin: 6px; }
+  color: rgba(238, 204, 13, 0.897);
+  text-decoration: none;
+  list-style: none;
+  padding: 2px;
+  margin: 3%; }
+
+.article__detalleProducto--ul2 {
+  text-align: center;
+  color: rgba(238, 204, 13, 0.897);
+  text-decoration: none;
+  list-style: none;
+  padding: 2px;
+  margin: 3%; }
 
 .article__otrosProductos {
   grid-area: otros-productos;
@@ -186,6 +190,9 @@ header nav ul {
 
 .busqueda .producto {
   color: gold; }
+
+.main__article--ofertas {
+  max-height: 320px; }
 
 /* contacto */
 .contacto {
@@ -280,7 +287,7 @@ header nav ul {
 @media only screen and (max-width: 767px) and (min-width: 321px) {
   .error {
     height: 100%; }
-  header nav ul {
+  .navegacion__ul {
     flex-direction: column; }
   .main__index {
     display: grid;
@@ -315,7 +322,7 @@ header nav ul {
 @media only screen and (max-width: 320px) {
   .error {
     height: 100%; }
-  header nav ul {
+  .navegacion__ul {
     flex-direction: column; }
   .main__index {
     display: grid;
@@ -360,3 +367,8 @@ header nav ul {
 #validationDefault04.form-select {
   background: linear-gradient(to top, rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493));
   color: gold; }
+
+.btn.btn-outline-success.my-2.my-sm-0 {
+  background: linear-gradient(to top, rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493));
+  color: gold;
+  padding: 2%; }

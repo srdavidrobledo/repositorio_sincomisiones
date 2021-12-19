@@ -59,7 +59,12 @@
   @import "nav.scss";
  
   @import "grid.scss";
-  
+
+  // carrousel index
+  .main__article--ofertas{
+    max-height: 320px;
+  }
+
   /* contacto */
   .contacto {
     text-align: center;
@@ -192,3 +197,8 @@
   color: $colorprimario-textos;
 }
 
+.btn.btn-outline-success.my-2.my-sm-0{
+  background: linear-gradient(to top, rgba(207, 203, 203, 0.205), rgba(66, 66, 155, 0.493)); 
+  color: $colorprimario-textos;
+  padding: 2%;
+}
